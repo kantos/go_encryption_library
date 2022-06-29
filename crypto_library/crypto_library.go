@@ -19,7 +19,7 @@ const (
 	gcmNonceSizeBytes     = 12     //96 bits is NIST standard
 )
 
-//Encrypt up to 2^104 strings using the same Key without issue.
+//Encrypt up to 2^68 strings using the same Key without issue.
 //It doesn't encrypt more than 16MB strings.
 //authenticatedData is strongly desired, it usually is the entity identifiers owner of what's being encrypted.
 func Encrypt(key []byte, plaintext string, authenticatedData string) (string, error) {
