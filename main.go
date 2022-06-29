@@ -4,7 +4,7 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"code.hq.twilio.com/skantorowicz/encryption-library/crypto_library"
+	"encryption-library/crypto_library"
 )
 
 func main() {
