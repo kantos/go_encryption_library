@@ -14,7 +14,7 @@ import (
 const (
 	maxPlainTextSizeBytes = 2 ^ 24 //arbitrary maximum, this is a string encryption library, not file encryption.
 	keySizeBytes          = 32     //expected key size for AES256
-	saltSizeBytes         = 9      //chosen to base64 doesn't have an '='. 2^36 * 2^32 = 2^68 encryptions possible with the same key
+	saltSizeBytes         = 9      //chosen to base64 doesn't have an '='. 2^96 * 2^72 = 2^168 -> 2^56 encryptions possible with the same key
 	ciphertextPartsNumber = 5      //$2a$salt$nonce$ciphertext
 	gcmNonceSizeBytes     = 12     //96 bits is NIST standard
 )
